@@ -20,7 +20,31 @@ h1{
 
 /* interface */
 .block{
-    height: 100%;
+    position: relative;
+    height: 43.5rem;
     width: 100%;
+    background-color: blue;
+    display: flex;
+}
+
+.htmledit{
+    height: 43.5rem;
+    width: 20%;
+    background-color: aqua;
+}
+
+.csseditor{
+    /* position: absolute; */
+    height: 43.5rem;
+    width: 20%;
+    background-color: aqua;
+    right: 0;
+    float: right;
+}
+
+#editor-area{
     
+    width: 60%;
+    height: 60%;
+    outline: none;
 }

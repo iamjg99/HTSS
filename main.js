@@ -10,7 +10,9 @@ function createWindow() {
 mainWindow = new BrowserWindow({
    width: 1200,
    height: 1000,
-   show: false
+   show: false,
+   titleBarStyle: false,
+
 });
 
    splash = new BrowserWindow({width: 800, height: 600, frame: false}) 
@@ -19,7 +21,7 @@ mainWindow = new BrowserWindow({
       protocol: 'file:', 
       slashes: true 
    })) 
-   mainWindow.loadURL('file://__dirname/Editor.html');
+   mainWindow.loadURL('file: //C:/Users/shubham/Desktop/minor project/HTSS/Editor.html');
    mainWindow.once('ready-to-show', () =>{
       splash.destroy(5*1000);
       mainWindow.show();
