@@ -12,7 +12,6 @@ mainWindow = new BrowserWindow({
    height: 1000,
    show: false,
    titleBarStyle: false,
-
 });
 
    splash = new BrowserWindow({width: 800, height: 600, frame: false}) 
@@ -23,8 +22,10 @@ mainWindow = new BrowserWindow({
    })) 
    mainWindow.loadURL('file: //C:/Users/shubham/Desktop/minor project/HTSS/Editor.html');
    mainWindow.once('ready-to-show', () =>{
-      splash.destroy(5*1000);
-      mainWindow.show();
+      // splash.destroy(15*1000);
+      setTimeout(() =>{
+         splash.destroy();
+         mainWindow.show();},3000);
    });   
 }  
 

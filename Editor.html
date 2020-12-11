@@ -8,13 +8,18 @@
 </head>
 <body>
     <div class="block">
-        <div class="htmledit">
+        <!-- <div class="htmledit">
           
-        </div>
-        <input type="text" id="editor-area">
-        <div class="csseditor">
+        </div> -->
+        <textarea id="editor-area" name="editing-area"></textarea>
+        <!-- <div class="csseditor">
 
-        </div>
+        </div> -->
     </div>
+
+    <script src="ckeditor/ckeditor.js"></script>
+    <script>
+        CKEDITOR.replace("editing-area");
+    </script>
 </body>
 </html>
